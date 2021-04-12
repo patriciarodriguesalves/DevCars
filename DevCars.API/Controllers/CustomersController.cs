@@ -2,6 +2,7 @@
 using DevCars.API.InputModels;
 using DevCars.API.Persistence;
 using DevCars.API.ViewModels;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using System;
@@ -84,18 +85,5 @@ namespace DevCars.API.Controllers
             return Ok(orderViewModel);
         }
 
-        //PUT api/customers/1
-        [HttpPut("{id}")]
-        public IActionResult Put(int id)
-        {
-            return Ok();
-        }
-
-        //Delete api/customers/1
-        [HttpDelete("{id}")]
-        public IActionResult Delete(int id)
-        {
-            return Ok();
-        }
     }
 }
